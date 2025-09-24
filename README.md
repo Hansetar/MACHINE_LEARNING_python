@@ -7,7 +7,8 @@
 # 安装环境
 
 ```
-pip install numpy pytorch scikit-learn matplotlib
+pip install numpy  scikit-learn matplotlib
+pytorch(根据自己环境安装)
 ```
 
 # 训练流程
