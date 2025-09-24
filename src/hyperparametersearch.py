@@ -180,7 +180,7 @@ h_best_model, h_best_params, search_results = hyperparameter_search(
     y_train_tensor,
     X_test_tensor,
     y_test_tensor,
-    model_path,
+    results_path,
     model_save_dir,
     num_trials=h_num_trials,  # 实际使用时可增加
     num_epochs=h_num_epochs,
