@@ -279,10 +279,11 @@ for epoch in range(num_epochs):
             early_stop = True
     
     # 打印进度
+    print(f"\rEpoch {epoch+1}/{num_epochs}, 训练损失: {epoch_train_loss:.4f}, 验证损失: {epoch_test_loss:.4f}", end="")
     if (epoch+1) % 10 == 0 or epoch == 0:
         print(f'Epoch [{epoch+1}/{num_epochs}], ' 
-              f'Train Loss: {epoch_train_loss:.4f}, ' 
-              f'Test Loss: {epoch_test_loss:.4f}')
+              f'训练损失: {epoch_train_loss:.4f}, ' 
+              f'验证损失: {epoch_test_loss:.4f}')
 
 loss_fig=train_result_dir+"loss.png"
 loss_csv=train_result_dir+"loss.csv"
